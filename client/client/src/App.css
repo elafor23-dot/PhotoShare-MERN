@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f3f1;
+  min-height: 100vh;
+}
+
+.main-container {
+  min-height: 100vh;
+}
+
+.navbar {
+  background: #800020;
+  color: white;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 3px 12px #0002;
+}
+
+.brand {
+  font-size: 25px;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar button {
+  background: transparent;
+  color: white;
+  border: 1px solid #ffffff66;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background: white;
+  color: #800020;
+}
+
+.home-content {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.welcome-section {
+  background: white;
+  padding: 80px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px #80002015;
+}
+
+.welcome-section h1 {
+  color: #800020;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.welcome-section p {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+button {
+  background: #800020;
+  color: white;
+  border: none;
+  padding: 13px 22px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #5e0018;
+}
+
+.post-form {
+  background: white;
+  max-width: 500px;
+  margin: 35px auto;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px #80002015;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.post-form h2 {
+  color: #800020;
+}
+
+textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  resize: vertical;
+}
+
+.upload-label {
+  display: block;
+  color: #800020;
+  padding: 14px;
+  border: 1px dashed #800020;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.upload-label input {
+  display: block;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.gallery-button {
+  margin-top: 10px;
+}
+
+.gallery-section {
+  max-width: 1150px;
+  margin: auto;
+  padding: 45px 20px;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  color: #800020;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.gallery-subtitle {
+  color: #888;
+  margin-bottom: 30px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.gallery-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px #80002018;
+  text-align: left;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-info {
+  padding: 15px;
+}
+
+.gallery-info h3 {
+  color: #800020;
+  margin-bottom: 8px;
+}
+
+.gallery-info p {
+  color: #777;
+  font-size: 14px;
+}
+
+.empty-message {
+  color: #888;
+  margin-top: 40px;
+}
+
+.auth-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  min-height: 75vh;
+}
+
+.auth-card {
+  background: white;
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px #80002018;
+  text-align: center;
+}
+
+.auth-logo {
+  color: #800020;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: #888;
+  margin-bottom: 25px;
+}
+
+.auth-card h2 {
+  color: #4a1728;
+  margin-bottom: 25px;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #e3d2d7;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.auth-card input:focus {
+  outline: none;
+  border-color: #800020;
+}
+
+.switch-text {
+  margin-top: 25px;
+  color: #777;
+}
+
+.switch-text span {
+  color: #800020;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 18px;
+  color: #800020;
+}
+
+.footer {
+  text-align: center;
+  padding: 25px;
+  color: #888;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navbar nav {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    font-size: 23px;
+  }
+
+  .welcome-section h1 {
+    font-size: 27px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .gallery-card img {
+    height: 160px;
+  }
+
+  .gallery-info {
+    padding: 10px;
+  }
+}
